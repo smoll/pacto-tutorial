@@ -1,0 +1,6 @@
+test:
+  pre:
+    - PACTO_MODE=generate bundle exec rake test:live
+
+  override:
+    - PACTO_MODE=validate bundle exec rake test:live
